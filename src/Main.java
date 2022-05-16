@@ -5,9 +5,15 @@ public class Main {
 
         Iface iface = new Calc();
 
-        System.out.println(iface.result());
+        if (iface.result() > 0) {
+            System.out.println(iface.result());
+        }
+        else
+            System.out.println(iface.result()*(-1));
 
 
+        Graf app = new Graf();
+        app.setVisible(true);
 
     }
 }
